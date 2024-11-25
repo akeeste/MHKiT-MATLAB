@@ -32,11 +32,11 @@ function Pst = calc_shortterm_flicker_severity(P)
 %   be used, and should be defined in the index. For example a 1 min
 %   interval should be written as P_st,1m.
 % 2. The suffix '_s' indicates the smoothed values and obtained following
-% the equations specified in section 5.7.2:
-%   P_50s = (P_30+P_50+P_80)/3.;
-%   P_10s = (P_6+P_8+P_10+P_13+P_17)/5.;
-%   P_3s = (P_2.2+P_3+P_4)/3.;
-%   P_1s = (P_0.7+P_1+P_1.5)/3.;
+%   the equations specified in section 5.7.2:
+%     P_50s = (P_30+P_50+P_80)/3.;
+%     P_10s = (P_6+P_8+P_10+P_13+P_17)/5.;
+%     P_3s = (P_2.2+P_3+P_4)/3.;
+%     P_1s = (P_0.7+P_1+P_1.5)/3.;
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

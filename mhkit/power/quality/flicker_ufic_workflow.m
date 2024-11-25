@@ -56,6 +56,7 @@ function out = flicker_ufic_workflow(Sr,Un,SCR,fg, ...
 %       .u_fic: double array (ntime,4)
 %           Instantaneous phase-to-neutral voltage simulated at fictitious
 %           grid (V) for impedence angles = 30, 50, 70, 85
+%
 % Note
 % -------
 % Step 1. Construct the fictitious grid by calculating Rfic and Lfic.

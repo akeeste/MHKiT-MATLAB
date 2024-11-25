@@ -1,9 +1,9 @@
 function [alpha0,freq] = calc_fundamental_freq(u_m,method,methodopts)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%   Calculates the fundamental frequency of the measured voltage u_m(t)
-%   using Zero-Crossing-Detection (ZCD) or Short-Time Fourier
-%   Transform (STFT).
+% Calculates the fundamental frequency of the measured voltage u_m(t)
+% using Zero-Crossing-Detection (ZCD) or Short-Time Fourier
+% Transform (STFT).
 %
 % Parameters
 % -----------
@@ -21,22 +21,25 @@ function [alpha0,freq] = calc_fundamental_freq(u_m,method,methodopts)
 %       opts = {'Window',rectwin(M),'OverlapLength',L,
 %               'FFTLength',Nfrq,'FrequencyRange','onesided'}
 %       if using 'ZCD' method, can set to {}.
+%
 % Returns
 % -------
 %   freq: struct()
 %       .time: time at each measurement time step (s)
 %       .data: double array of size (ntime), freq(t), the fundamental
-%       frequency (that may vary over time) calculated for u_m(t).
+%         frequency (that may vary over time) calculated for u_m(t).
 %   alpha0: double
 %       The electrical angle (radians) at t=0.
+%
 % Note
 % -------
 % 1. Window settings are crucial to get accurate results if
-% Short-Time Fourier Transform (STFT) is used to calculate the frequency.
+%   Short-Time Fourier Transform (STFT) is used to calculate the frequency.
 % 2. Steps:
 %   Step1. adjust time values
 %   Step2. Estimate fundamental freq using either STFT or ZCD
 %   Step3. Interpolate estimated freq back to u_m.time
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     % check input:

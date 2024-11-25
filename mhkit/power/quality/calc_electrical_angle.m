@@ -1,7 +1,7 @@
 function alpha_m = calc_electrical_angle(freq,alpha0)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%   Calculates the electrical angle alpha_m(t) of the fundamental of the
+% Calculates the electrical angle alpha_m(t) of the fundamental of the
 % measured voltage (u_m(t)) according to IECTS 62600-30(ed1.0) Eq (3).
 %
 %
@@ -18,6 +18,7 @@ function alpha_m = calc_electrical_angle(freq,alpha0)
 % -------
 %   alpha_m: double array (ntime)
 %       Electrical angle (alpha_m(t)) of the fundamental component of u_m.
+%
 % Note
 % -------
 % 1. IECTS-62600-30 Eq(3):
